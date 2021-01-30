@@ -1,2 +1,2 @@
-# visualblue
- My personal website, hosted at https://visual.blue
+# visualblueweb
+ My website, hosted at https://visual.blue
