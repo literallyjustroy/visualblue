@@ -16,12 +16,24 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        li {
+            margin: 10px;
+        }
+
         h1 {
             margin: 5px;
         }
 
         h1 hr {
             margin: 0;
+        }
+
+        h3 {
+            margin: 1em;
+        }
+
+        h3 i {
+            margin: 0 0.25em 0 0;
         }
 
         sub {
@@ -38,15 +50,20 @@
             color: #59cef1;
         }
 
+        .big-links a:link, .big-links a:visited{
+            color: #EEF2F2;
+        }
+
         /* mouse over link */
         a:hover {
             text-decoration: underline;
         }
 
         /* selected link */
-        a:active {
+        a:active, .big-links a:active {
             color: #868686;
         }
+
     </style>
 </head>
 <body>
@@ -61,7 +78,7 @@
              width="300">
     </div>
 </header>
-<main style="max-width: 1000px; margin: auto;">
+<main style="max-width: 1000px; margin: 0 auto 100px auto;">
 
     <div>
         <div>
@@ -69,12 +86,13 @@
             <hr>
         </div>
         <p> <!-- Hook em' with the humor -->
-            I am a Northern Kentucky University student, and all-around good-guy, pursuing degrees in Computer Science and Mathematics.
+            I am a student at Northern Kentucky University, pursuing degrees in Computer Science and Mathematics.
         </p>
-        <ol type="i">
+        <ul>
             <li>I enjoy playing <strong>video games</strong> and <strong>reading</strong> in my spare time</li>
             <li>I compete on <strong>NKU Esports</strong> Club's CS:GO team</li>
-        </ol>
+            <li>I develop a discord bot called <a href="https://github.com/royOST/norse-bot">Norse Bot</a> for the NKU Esports Club</li>
+        </ul>
     </div>
 
     <div>
@@ -108,14 +126,14 @@
         </p>
     </div>
 
-    <div>
+    <div class="big-links">
         <div>
-            <h1><i class="fa fa-mouse-pointer fa-2x"></i> Links<sub>..ally?,</sub></h1> <!-- More forced humor -->
+            <h1><i class="fa fa-mouse-pointer fa-2x"></i> Links<sub>..ally,</sub></h1> <!-- More forced humor -->
             <hr>
         </div>
-        <p>
-            Some day, there will be a beautiful field of links here -- for now, the dirt lay bare.
-        </p>
+        <a href="https://github.com/royOST/norse-bot"><h3><i class="fa fa-github fa-2x"></i>GitHub /royOST</h3></a>
+        <a href="https://www.linkedin.com/in/roykanesmith/"><h3><i class="fa fa-linkedin fa-2x"></i>LinkedIn /roykanesmith</h3></a>
+        <a href="mailto:roykanesmith@gmail.com"><h3><i class="fa fa-envelope fa-2x"></i>Email /roykanesmith@gmail.com</h3></a>
     </div>
 
 </main>
