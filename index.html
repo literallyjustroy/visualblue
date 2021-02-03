@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Roy was here -->
 <html lang="en">
 <head>
     <title>Roy Smith</title>
     <meta name="description" content="Roy Smith's personal website (Software Engineer)">
     <meta name="author" content="Roy Smith">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="utf-8">
-    <style> /* Look, I wanted to make this stuff performant, please forgive the inline styling */
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /* Custom font... worth the cost */
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /* Custom font... worth it ;} */
 
         body {
             background-color: #12151F;
@@ -15,34 +16,111 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        h1 {
+            margin: 5px;
+        }
+
+        h1 hr {
+            margin: 0;
+        }
+
+        sub {
+            font-size: 15px;
+            color: #7b8686;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* unvisited & visited link */
+        a:link, a:visited {
+            color: #59cef1;
+        }
+
+        /* mouse over link */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* selected link */
+        a:active {
+            color: #868686;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <h1 style="font-size: 100px; text-align: center; margin: 5px;">Roy Smith</h1>
-            <img style="border-radius: 50%; display: block; margin: 5px;" src="assets/photo_of_me_square_compressed.jpg" alt="Avatar" height="300" width="300">
-        </div>
-    </header>
-    <main style="width: 750px; margin: auto;">
-        <div>
-            <div>
-                <h1 style="margin: 0"><img src="assets/GitHub-Mark-Light-64px.png" alt="GitHub Logo"> GitHub</h1>
-                <hr style="margin: 0">
-            </div>
-            <p>
-                Hi :}
+<header>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <h1 style="font-size: 100px; text-align: center; margin: 5px;">Roy Smith</h1>
+        <img src="assets/photo_of_me_square_compressed.jpg"
+             style="border-radius: 50%; display: block; margin: 5px;"
+             alt="Avatar"
+             title="A noticeably-hireable guy"
+             height="300"
+             width="300">
+    </div>
+</header>
+<main style="max-width: 1000px; margin: auto;">
 
-                I am a computer science and mathematics major
-            </p>
-            <ol type="i">
-                <li><strong>Berea College</strong> while in High School in 2016</li>
-                <li><strong>Northern Kentucky University</strong> for an undergraduate est. 2021</li>
-            </ol>
+    <div>
+        <div>
+            <h1><i class="fa fa-user-circle fa-2x"></i> Personally,</h1>
+            <hr>
         </div>
-    </main>
-    <footer>
-        <small><i>Copyright &copy; 2021 Roy Smith</i></small>
-    </footer>
+        <p> <!-- Hook em' with the humor -->
+            I am a Northern Kentucky University student, and all-around good-guy, pursuing degrees in Computer Science and Mathematics.
+        </p>
+        <ol type="i">
+            <li>I enjoy playing <strong>video games</strong> and <strong>reading</strong> in my spare time</li>
+            <li>I compete on <strong>NKU Esports</strong> Club's CS:GO team</li>
+        </ol>
+    </div>
+
+    <div>
+        <div>
+            <h1><i class="fa fa-laptop fa-2x"></i> Professionally,</h1>
+            <hr>
+        </div>
+        <p>
+            I am a Software Engineer looking to improve and practice software design and development.
+            <br><br>
+            I currently work at <em>GE Corporate</em> as an intern for the Identity Management Team. At GE I have grown as a
+            developer, and have also provided great value to my team. I have gotten to experience the agile process, testing,
+            full-stack development, and gained a ton of invaluable knowledge.
+        </p>
+    </div>
+
+    <div>
+        <div>
+            <h1><i class="fa fa-code fa-2x"></i> Technically,</h1>
+            <hr>
+        </div>
+        <p>
+            I enjoy solving problems and engineering <em>beautiful</em> software solutions. As an intern, I have had the
+            "pleasure" of working with some <strong>poorly</strong> engineered code, and understand the distinct soul-crushing
+            sadness involved in maintaining it. Though there is great pleasure in refactoring this sadness, it's not always
+            practical, and so, in clean coding, I strive to preserve the sanity of future engineers.
+            <br><br>
+            I have experience in many different technologies and design patterns, but more importantly, I have a lot of
+            experience in general problem solving. If you do want to know which specific technologies I've worked with, they are
+            available on <a href="https://www.linkedin.com/in/roykanesmith/">my LinkedIn.</a>
+        </p>
+    </div>
+
+    <div>
+        <div>
+            <h1><i class="fa fa-mouse-pointer fa-2x"></i> Links<sub>..ally?,</sub></h1> <!-- More forced humor -->
+            <hr>
+        </div>
+        <p>
+            Some day, there will be a beautiful field of links here -- for now, the dirt lay bare.
+        </p>
+    </div>
+
+</main>
+<footer>
+    <small><i>Copyright &copy; 2021 Roy Smith</i></small>
+</footer>
 </body>
 </html>
